@@ -1,15 +1,11 @@
 <script>
+  import Output from "./Output.svelte";
+
   let courseGoal = "";
 </script>
 
-<style>
-  .red-text {
-    color: red;
-  }
-</style>
-
 <input type="text" bind:value={courseGoal} />
-<h1 class:red-text={courseGoal.indexOf('!') > -1}>{courseGoal}</h1>
+<Output {courseGoal} />
 <h1>Assignment</h1>
 
 <p>Solve these tasks.</p>
