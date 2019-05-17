@@ -2,8 +2,14 @@
   let courseGoal = "";
 </script>
 
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+
 <input type="text" bind:value={courseGoal} />
-<h1>{courseGoal}</h1>
+<h1 class:red-text={courseGoal.indexOf('!') > -1}>{courseGoal}</h1>
 <h1>Assignment</h1>
 
 <p>Solve these tasks.</p>
