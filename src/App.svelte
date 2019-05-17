@@ -3,6 +3,7 @@
 </script>
 
 <input type="text" bind:value={courseGoal} />
+<h1>{courseGoal}</h1>
 <h1>Assignment</h1>
 
 <p>Solve these tasks.</p>
